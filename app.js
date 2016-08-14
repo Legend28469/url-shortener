@@ -38,7 +38,7 @@ app.get("/new/:url(*)", function (req, res) {
 
     var newUrl = {
         original: url,
-        shortened: req.get("host") + "/" + code,
+        shortened: "http://" + req.get("host") + "/" + code,
         code: code
     }
 
